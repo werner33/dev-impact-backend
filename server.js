@@ -1,3 +1,5 @@
 const app = require('./app');
 
-app.listen(7040, () => console.log('app listening on 7040'));
+require('dotenv').config();
+
+app.listen(process.env.PORT, () => console.log('app listening on 7040'));
